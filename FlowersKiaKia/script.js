@@ -23,6 +23,7 @@ const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 20,
+  
 
   // If we need pagination
   pagination: {
@@ -106,19 +107,13 @@ ScrollReveal().reveal(".description", {
   delay: 1500,
   reset: true, 
 });
-ScrollReveal().reveal(".order-now", {
+ScrollReveal().reveal(".buttons", {
   ...scrollRevealOption, 
   origin: "top",
   delay: 2000,
   reset: true, 
-});
-ScrollReveal().reveal(".contact-us", {
-  ...scrollRevealOption, 
-  origin: "top",
-  delay: 2500,
-  reset: true, 
-});
-
+  });
+  
 //about-section reveal 
 ScrollReveal().reveal(".about-details .text", {
   ...scrollRevealOption, 
