@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Pink Tulips",
+        "price": 180,
+        "image": "KiaFlowerv1.webp"
+    },
+    {
+        "id": 2,
+        "name": "Red Roses",
+        "price": 180,
+        "image": "KiaFlowerv2.webp"
+    },
+    {
+        "id": 3,
+        "name": "White Tulips",
+        "price": 180,
+        "image": "KiaFlowerv3.webp"
+    },
+    {
+        "id": 4,
+        "name": "Sunflower",
+        "price": 200,
+        "image": "KiaFlowerv4.webp"
+    },
+    {
+        "id": 5,
+        "name": "Fidelson Flower",
+        "price": 500,
+        "image": "KiaFlowerv5.webp"
+    },
+    {
+        "id": 1,
+        "name": "Pink Roses",
+        "price": 200,
+        "image": "KiaFlowerv6.webp"
+    }
+]

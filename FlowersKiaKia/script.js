@@ -195,4 +195,13 @@ ScrollReveal().reveal(".submit-button", {
   origin: "bottom"
 }); 
 
+function SendMail(){
+  let parms = {
+    name : document.getElementById("Name").value,
+    email : document.getElementById("Email").value,
+    message : document.getElementById("Message").value,
+  }
+
+  emailjs.send("service_5dn3ida","template_zzi4p9b",parms).then(alert("Email Sent!!"))
+}
 

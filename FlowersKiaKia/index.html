@@ -11,6 +11,17 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "pP7Oyn0x-FsE_luQV",
+        });
+    })();
+    </script>
+
 </head>
 <body>
     <!-- Header/navbars -->
@@ -43,9 +54,16 @@
 
                 <p class="nav-tool">
                     <a href="Marketplace.html" class="nav-tool-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                     <a href="custom.html" class="nav-tool-link"><i class="fa-solid fa-fan"></i></a>
                 </p>
 
+               
 
+                    
+                </a>
+
+
+            
             </ul>
 
             <button id="menu-open-button" class="fas fa-bars"></button>
@@ -245,10 +263,10 @@
 
 
                 <form action="#" class="contact-form">
-                    <input type="text" placeholder="Your Name" class="form-input" required>
-                    <input type="email" placeholder="Your Email" class="form-input" required>
-                    <textarea placeholder="Tell us the number of flower that you want!~" class="form-input"></textarea required>
-                    <button class="submit-button">Submit</button>
+                    <input type="text" id= "Name" placeholder="Your Name" class="form-input" required>
+                    <input type="email" id="Email" placeholder="Your Email" class="form-input" required>
+                    <textarea id="Message" placeholder="Tell us the number of flower that you want!~" class="form-input"></textarea required>
+                    <button class="submit-button" onclick="SendMail()">Submit</button>
                 </form>
             </div>
         </section>
