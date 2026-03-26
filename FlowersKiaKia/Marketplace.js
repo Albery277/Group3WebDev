@@ -37,6 +37,7 @@ closeCart.addEventListener('click', () => {
   body.classList.toggle('showCart')
 })
 
+
 const addDataToHTML = () => {
   listProductHTML.innerHTML = '';
   if(listProducts.length > 0){
@@ -101,7 +102,7 @@ const addCartToHTML = () => {
       <div class="image">
           <img src="${info.image}" alt="">
         </div>
-        <div class="name">${info.name}</div>
+        <div id= "Proname" class="name">${info.name}</div>
         <div class="totalPrice">Php${info.price * cart.quantity}</div>
         <div class="quantity">
           <span class="minus"><</span>
@@ -110,6 +111,9 @@ const addCartToHTML = () => {
         </div>
       `;
     listCartHTML.appendChild(newCart);
+    let product_names = newCart;
+    console.log(product_names);
+
     })
     console.log(listCartHTML)
   }
@@ -167,3 +171,12 @@ const initApp = () => {
   console.log(listCartHTML);
 }
 initApp();
+
+function Checkout(){
+  let parms = {
+    name : window.prompt("Name").value,
+    email : window.prompt("Email").value,
+    proname : document.getElementById("Proname").value,
+  }
+  emailjs.send("service_5dn3ida","template_wvz85g7",parms).then(alert("Email Sent!!"))
+}

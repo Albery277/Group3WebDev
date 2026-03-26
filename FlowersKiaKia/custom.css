@@ -173,10 +173,10 @@ header .navbar {
 }
 
 
+ /* bonquet size */
 .title_size {
     padding: 30px;
 }
-
 
 .container {
     margin: 0 auto;
@@ -266,6 +266,7 @@ header .navbar {
     opacity: 1; 
 }
 
+ /*Flowers section */
 
 .flower_image {
     max-width: 83%;
@@ -357,7 +358,179 @@ header .navbar {
     opacity: 1; 
 }
 
+ /* flowers section */
 
+.flower_image {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+    transition: 0.3s ease; 
+}
+
+.Bonquet_wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.Bonquet_wrap> label {
+    position:relative; 
+    display: block; 
+    border: 1px solid #bbb;
+    border-radius: 0.5rem; 
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    text-align: center;
+}
+
+.Bonquet_wrap > input {
+    display: none;
+}
+
+.Bonquet_wrap > label h4 {
+    font-weight: 600; 
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.Bonquet_wrap > label p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.Bonquet_wrap > label .price {
+    font-weight: 600;
+    font-size: 15px; 
+    color:#222; 
+
+}
+
+.Bonquet_wrap > label:before {
+    content: "";
+    position: absolute; 
+    top: 0.5rem; 
+    right: 0.5rem;
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;
+    background: var(--low-gray-color);
+    transform: scale(0);
+    opacity: 0; 
+    transition: all 250ms ease-in-out;
+}
+
+.Bonquet_wrap > label:after {
+    content: "";
+    position: absolute; 
+    top: calc(0.5rem + 5px);
+    right: calc(0.5rem + 5px);
+    width: 10px;
+    height: 10px; 
+    border-radius: 50%;
+    background: #efffef;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+
+.Bonquet_wrap input:checked + label {
+    background: var(--light-transparent); 
+    border: 1px solid var(--medium-gray-color); 
+    
+}
+
+.Bonquet_wrap input:checked + label:before, 
+.Bonquet_wrap input:checked + label:after {
+    transform: scale(1); 
+    opacity: 1; 
+}
+
+ /* ribbons section */
+
+.Bonquet_ribbons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.Bonquet_ribbons > label {
+    position:relative; 
+    display: block; 
+    border: 1px solid #bbb;
+    border-radius: 0.5rem; 
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    text-align: center;
+}
+
+.Bonquet_ribbons > input {
+    display: none;
+}
+
+.Bonquet_ribbons > label h4 {
+    font-weight: 600; 
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.Bonquet_ribbons > label .price {
+    font-weight: 600;
+    font-size: 15px; 
+    color:#222; 
+
+}
+
+.Bonquet_ribbons > label:before {
+    content: "";
+    position: absolute; 
+    top: 0.5rem; 
+    right: 0.5rem;
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;
+    background: var(--low-gray-color);
+    transform: scale(0);
+    opacity: 0; 
+    transition: all 250ms ease-in-out;
+}
+
+.Bonquet_ribbons > label:after {
+    content: "";
+    position: absolute; 
+    top: calc(0.5rem + 5px);
+    right: calc(0.5rem + 5px);
+    width: 10px;
+    height: 10px; 
+    border-radius: 50%;
+    background: #efffef;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+
+.Bonquet_ribbons input:checked + label {
+    background: var(--light-transparent); 
+    border: 1px solid var(--medium-gray-color); 
+    
+}
+
+.Bonquet_ribbons input:checked + label:before, 
+.Bonquet_ribbons input:checked + label:after {
+    transform: scale(1); 
+    opacity: 1; 
+}
+
+
+
+ /* yung pang quantiti*/
 
 .quantity {
     display: flex;
@@ -381,4 +554,45 @@ header .navbar {
     background: var(--green-color); 
 }
 
+textarea{
+    margin-bottom: 25%;
+}
 
+
+.total-footer {
+    position: fixed;
+    bottom:  0;
+    left: 0; 
+    width: 100%;
+    padding: 15px 20px;
+    background: var(--black-color)
+    
+
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:  20px;
+    color: white;
+    gap: 250px;
+   
+}
+
+.checkout {
+    padding: 10px 20px;
+    border: none;
+    background: var(--low-white-color);
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: end;
+}
+
+.checkout:hover {
+    background: var(--green-color); 
+
+}
